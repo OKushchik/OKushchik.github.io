@@ -172,10 +172,38 @@ main{
     text-align: justify ;
 
 }
-
-
 .sideBar {
     width: 1000px;
     height: 1000px;
     /*background: lightgrey;*/
 }
+.footerWrapper{
+    width:100%;
+    background: #393a39;
+    height: 80px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.footerText {
+    color: white;
+    padding-top: 10px;
+    padding-left: 40%;
+}
+.icons {
+    padding-right:20%;
+}
+.iconSite {
+    width: 30px;
+    display: inline-block;
+
+}
+/*.iconFacebook {*/
+    /*width: 30px;*/
+/*}*/
+/*.iconYoutube {*/
+    /*width: 30px;*/
+/*}*/
+/*.iconTweeter {*/
+    /*width: 30px;*/
+/*}*/
