@@ -11,8 +11,8 @@
     z-index: 2;
     transform:rotate(45grad);
     transition: all 0.15s linear;
-    left: 35px;
-    top:5%;
+    left: 40%;
+    top:3%;
 }
 .block2 {
     background: green;
@@ -29,8 +29,8 @@
     z-index: 2;
     transform:rotate(45grad);
     transition: all 0.15s linear;
-    left: 35px;
-    top:5%;
+    left: 40%;
+    top:3%;
 }
 .block3 {
     background:blue;
@@ -46,8 +46,8 @@
     z-index: 2;
     transform: rotate(45grad);
     transition: all 0.15s linear;
-    left: 35px;
-    top:5%;
+    left: 40%;
+    top:3%;
 }
 
 .block4 {
@@ -63,8 +63,8 @@
     z-index: 2;
     transform:rotate(45grad);
     transition: all 0.15s linear;
-    left: 35px;
-    top:5%;
+    left: 40%;
+    top:3%;
 }
 .block4:hover{
     z-index: 3;
@@ -94,6 +94,7 @@
 }
 .plus {
     position: absolute;
-    left: 20px;
+    left: 25%;
+    top: -5%;
     /*transform:rotate(45grad);*/
 }
