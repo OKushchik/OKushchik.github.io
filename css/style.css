@@ -86,30 +86,38 @@ li.headerMenu__item a:hover {
     max-width: 20%;
 }
 .TitleUserAction {
-    background: #262626;
-    max-width: 75%;
-    height: 50px;
-    border-radius: 5px;
     position: relative;
+    width: 75%;
+    /*height: 60px;*/
+    border-radius: 5px;
+}
+.activeBackgroundIcon img{
+    width: 100%;
+    height: auto;
 }
 .TitleUserAction_pic img{
     width: 100%;
     height: auto;
 }
 .TitleUserAction_pic {
-    /*width: 10%;*/
     display: block;
-    /*width: 50px;*/
+    max-width: 35%;
     position: absolute;
-    top: 12px;
-    left: 15px;
+    width: 20%;
+    bottom: 20%;
+    left: 5%;
+
 }
 .TitleUserAction_text h1{
+    max-width: 65%;
+    min-width: 40%;
+    display: block;
     color: white;
     font-size: 2.5vw;
     position: absolute;
-    top:12px;
-    left: 75px;
+    top:30%;
+    right: 5%;
+
 }
 .TitleUserAction h1:hover {
     color: #959595;
