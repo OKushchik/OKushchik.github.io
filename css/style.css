@@ -1,104 +1,568 @@
-.block1 {
-    background: red;
-    width: 200px;
-    height: 200px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:"Roboto", sans-serif;
+    font-weight: 700;
+}
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+header {
+    border-bottom: 3px solid black;
+}
+.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 15px;
+    background: white;
+}
+.logo {
+    width: 230px;
+}
+li.headerMenu__item {
+    display: inline-block;
+}
+li.headerMenu__item a {
+   padding: 12px 15px;
+    color: #373737;
+    text-decoration: none;
+}
+/*.MenuIcon{*/
+    /*font-size: 40px;*/
+    /*color: green;*/
+/*}*/
+/*.MenuIcon :hover {*/
+    /*color:blue;*/
+/*}*/
+.burgerMenu {
+    font-size: 30px;
+    display: none;
+}
+li.headerMenu__item a:hover {
+    background: #373737;
+    color: white;
+}
+/*li.headerMenu__item-active a {*/
+    /*background: #373737;*/
+    /*color: white;*/
+/*}*/
+.mainBunner {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: white;
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.mainBunnerTextblock {
+    max-width: 50%;
+    display: block;
+}
+.mainBunner__title {
+    color: gray;
+    font-size: 3vw;
+    max-width: 20%;
+}
+.mainBunner__subTitle {
+    color: gray;
+    font-size:3vw;
+    max-width: 20%;
+}
+.TitleUserAction {
+    background: #262626;
+    max-width: 75%;
+    height: 50px;
+    border-radius: 5px;
     position: relative;
 }
-.block1:hover {
-    z-index: 2;
-    box-shadow: 3px 3px 25px rgba(0,0,0,61);
+.TitleUserAction_pic img{
+    width: 100%;
+    height: auto;
 }
-.block1:hover .plus{
-    z-index: 2;
-    transform:rotate(45grad);
-    transition: all 0.15s linear;
-    left: 40%;
-    top:3%;
-}
-.block2 {
-    background: green;
-    width: 200px;
-    height: 200px;
+.TitleUserAction_pic {
+    display: block;
+    width: 50px;
     position: absolute;
-    top: 30px;
-    left: 180px;
-}
-.block2:hover{
-    z-index: 2;
-    box-shadow: 3px 3px 25px rgba(0,0,0,61);
-}
-.block2:hover .plus{
-    z-index: 2;
-    transform:rotate(45grad);
-    transition: all 0.15s linear;
-    left: 40%;
-    top:3%;
-}
-.block3 {
-    background:blue;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: -30px;
-}
-.block3:hover{
-    z-index: 3;
-    box-shadow: 3px 3px 25px rgba(0,0,0,61);
-}
-.block3:hover .plus {
-    z-index: 2;
-    transform: rotate(45grad);
-    transition: all 0.15s linear;
-    left: 40%;
-    top:3%;
-}
-
-.block4 {
-    background:yellow ;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top:-200px;
-    left:180px;
-    z-index: 1;
-}
-.block4:hover .plus{
-    z-index: 2;
-    transform:rotate(45grad);
-    transition: all 0.15s linear;
-    left: 40%;
-    top:3%;
-}
-.block4:hover{
-    z-index: 3;
-    box-shadow: 3px 3px 25px rgba(0,0,0,61);
-}
-.round {
-    background: gray;
-    width:80px;
-    height: 80px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-.gorizontal {
-    background: black;
-    width: 40px;
-    height: 10px;
-
-}
-.vertikal {
-    background: black;
-    width: 10px;
-    height: 40px;
-    position: relative;
-    top:25px;
+    top: 12px;
     left: 15px;
 }
-.plus {
+.TitleUserAction_text h1{
+    color: white;
+    font-size: 2.5vw;
     position: absolute;
-    left: 25%;
-    top: -5%;
-    /*transform:rotate(45grad);*/
+    top:12px;
+    left: 75px;
 }
+.TitleUserAction h1:hover {
+    color: #959595;
+}
+.mainBunnerImgContent {
+   max-width: 50%;
+    /*margin-left: 80%;*/
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    /*margin-top:-200px;*/
+}
+main{
+    display: flex;
+    align-items: flex-start;
+}
+.articlesBlock {
+    padding-right: 20px;
+    width: 75%;
+}
+.mainArticle{
+    display: flex;
+}
+.mainArticle__img {
+    width:100%;
+    height: auto;
+    margin-right: 2%;
+    position: relative;
+}
+.mainArticle__img img{
+    width: 100%;
+    height: auto;
+}
+.insideMainArticle_img1{
+    width: 35%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.insideMainArticle_img2 {
+    width: 25%;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+.mainArticle__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainArticleManager img{
+    width: 100%;
+    height: auto;
+}
+.mainArticleManager {
+    display: flex;
+    margin-left: auto;
+}
+.mainArticleManager__arrow {
+    width:30px ;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainArticleManager__arrow-left{
+    background: #7c7c7c;
+}
+.mainArticleManager__arrow-right{
+    background: #989898;
+}
+.articleTextOneLine {
+    display: flex;
+}
+.articleTextSecondLine {
+    display:flex;
+}
+.articleTextThirdLine {
+    display:flex;
+}
+.articleText__text {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 25px 25px 10px;
+}
+.articleText__text h1 {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.articleText__text h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.articleText__text p {
+    text-align: justify ;
+
+}
+.sideBar {
+    display: block;
+    /*position: relative;*/
+    /*background: lightgrey;*/
+    width: 25%;
+}
+.imgClassSideBarFirst {
+    position: relative;
+
+}
+
+.imgClassSideBarFirst_background img{
+    width: 100%;
+    height: auto;
+
+    /*position: relative;*/
+}
+
+/*.imgClassSideBarFirst_background {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*!*position: relative;*!*/
+    /*!*background: #dc1f08;*!*/
+/*}*/
+.imgClassSideBarFirst p{
+    text-align: center;
+    color: #9ba08d;
+    font-size: 1.6vw;
+    padding-top: 10%;
+    position: absolute;
+    top:-10%;
+    left: 20%;
+}
+.imgClassSideBarFirst h1 {
+    text-align: center;
+    color: #b8dc58;
+    font-family:sans-serif;
+    font-size: 2.8vw;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    /*padding-top: 20%;*/
+}
+.imgClassSideBarFirst_planshetBig {
+    max-width: 30%;
+    position: absolute;
+    top:45%;
+    left: 8%;
+
+}
+.imgClassSideBarFirst_planshetSmall{
+    width: 20%;
+    position: absolute;
+    top:57%;
+    left: 27%;
+}
+.imgClassSideBarFirst_cssimg {
+    width:20%;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+}
+.imgClassSideBarSecond{
+    position:relative;
+}
+.imgClassSideBarSecond_background img{
+    max-width: 100%;
+    height: auto;
+}
+/*.imgClassSideBarSecond_round{*/
+    /*!*max-width: 100%;*!*/
+    /*!*max-height: 100%;*!*/
+    /*position: absolute;*/
+    /*top: -10%;*/
+    /*left: 25%;*/
+/*}*/
+.imgClassSideBarSecond_round img{
+    max-width: 50%;
+    height: auto;
+    position: absolute;
+    top: -10%;
+    left: 25%;
+}
+.imgClassSideBarSecond_round h1{
+    position: absolute;
+    top: -9%;
+    left: 32%;
+    font-size: 5.0vw;
+    color: white;
+}
+.imgClassSideBarSecond_round p{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    font-size: 2.5vw;
+    color: white;
+}
+.ClassSideBarSecond_text h2{
+    font-size: 2.5vw;
+    color: white;
+    position: absolute;
+    top: 43%;
+    left: 6%;
+}
+.ClassSideBarSecond_text p{
+    font-size:1.5vw;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+}
+.ClassSideBarSecond_icon {
+    background: #58d1dc;
+    width: 50%;
+    height: 13%;
+    border-radius: 10px;
+    position: absolute;
+    top: 83%;
+    left: 25%;
+}
+.ClassSideBarSecond_icon h1{
+    font-size: 1.5vw;
+    color: white;
+    position: absolute;
+    top:13%;
+    left: 8%;
+}
+.ClassSideBarSecond_icon a:hover {
+    background: #3d848f;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+.imgClassSideBarThird {
+    position: relative;
+}
+.imgClassSideBarThird_background img{
+    max-width: 100%;
+    height:auto;
+}
+.imgClassSideBarThird h1{
+    font-size:1.7vw;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+}
+.imgClassSideBarThird h2{
+    font-size: 1.1vw;
+    text-align: justify;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 15px;
+}
+.imgClassSideBarThird_textEnterName {
+    width: 90%;
+    height: 11%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.imgClassSideBarThird_textEnterAddress {
+    width: 90%;
+    height: 11%;
+    background: white;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+.imgClassSideBarThird_icon {
+    width: 60%;
+    height: 15%;
+    background: #bb4366;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+.imgClassSideBarThird_icon h3{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    font-size: 1.8vw;
+}
+.imgClassSideBarThird_icon a:hover{
+    background: #843047;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.footerWrapper{
+    width:100%;
+    background: #393a39;
+    height: 80px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    position: relative;
+}
+.footerText {
+    color: white;
+    padding-top: 10px;
+    position: absolute;
+    left: 40%;
+}
+.icons {
+    display: flex;
+    position: absolute;
+    right: 10%;
+}
+.iconSite {
+     width: 30px;
+     display: inline-block;
+     padding: 5px;
+
+ }
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+    .articlesBlock {
+        order: 2;
+        width: 100%;
+    }
+    .sideBar {
+        order: 1;
+        display: flex;
+        width: 100%;
+        padding: 2%;
+        margin: 2%;
+    }
+    .mainBunner {
+        display: block;
+        width: 85%;
+    }
+    .imgClassSideBarFirst p{
+        font-size: 2.5vw;
+        left:15%;
+    }
+    .imgClassSideBarFirst h1 {
+        font-size: 4.8vw;
+    }
+    .imgClassSideBarSecond_round h1{
+        font-size: 9.0vw;
+
+    }
+    .imgClassSideBarSecond_round p{
+        font-size: 4.5vw;
+    }
+    .ClassSideBarSecond_text h2{
+        font-size: 4.5vw;
+    }
+    .ClassSideBarSecond_text p{
+        font-size:2.5vw;
+    }
+    .ClassSideBarSecond_icon h1{
+        font-size: 2.5vw;
+        left: 15%;
+    }
+    .imgClassSideBarThird h1{
+        font-size:2.8vw;
+    }
+    .imgClassSideBarThird h2 {
+        font-size: 2.0vw;
+
+    }
+    .imgClassSideBarThird_icon h3{
+        font-size: 2.8vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .headerMenu ul{
+        display: none;
+        position: absolute;
+
+    }
+    /*.headerMenu ul {*/
+        /*margin-top: 1%;*/
+        /*order: 1;*/
+        /*color: #b8dc58;*/
+    /*}*/
+
+    /*}*/
+    .burgerMenu {
+        display: block;
+        margin-right: 30%;
+    }
+    .headerMenu:hover {
+        color: red;
+        display: block;
+    }
+    .headerMenu:hover ul {
+        display: block;
+        margin-left: -50px;
+        background-color: #8f8f8f;
+        margin-top: -1%;
+        z-index: 100;
+        border: #58d1dc;
+        border-style: double;
+        border-radius: 10px;
+    }
+    .headerMenu:hover li {
+        margin-top: 30px;
+        background-color: white;
+        border: #58d1dc;
+        border-style: double;
+        border-radius: 10px;
+    }
+    li.headerMenu__item a:hover {
+        display: block;
+        background: #ff2013;
+        border-radius: 10px;
+        color: white;
+    }
+    /*.burgerMenu:hover.headerMenu ul{*/
+        /*display: block;*/
+    /*}*/
+
+
+
+
+
+
+.mainArticle__img {
+    width: 100%;
+    order: 1;
+    position: relative;
+}
+.insideMainArticle_img1 {
+    position: absolute;
+    top: 20%;
+}
+.insideMainArticle_img2 {
+    top: 15%;
+}
+.mainArticle__content {
+    width: 100%;
+    order: 2;
+}
+.mainArticle {
+    display: flex;
+}
+    /*.mainBunner {*/
+        /*flex-direction: column;*/
+    /*}*/
+    /*h1 {*/
+        /*font-size: 120%;*/
+    /*}*/
+ /*img {*/
+     /*width: 100%;*/
+     /*height: auto;*/
+ }
+
