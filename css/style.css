@@ -552,10 +552,10 @@ main{
 }
 .insideMainArticle_img1 {
     position: absolute;
-    top: 20%;
+    top: 70px;
 }
 .insideMainArticle_img2 {
-    top: 15%;
+    top: 60px;
 }
 .mainArticle__content {
     width: 100%;
