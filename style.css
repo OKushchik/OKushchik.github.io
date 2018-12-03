@@ -528,6 +528,7 @@ main{
         border-style: double;
         border-radius: 10px;
         transition: 4s ease-in;
+        cursor: pointer;
     }
     .headerMenu:hover li {
         margin-top: 10px;
