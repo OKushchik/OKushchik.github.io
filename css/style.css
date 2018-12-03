@@ -538,14 +538,14 @@ main{
         cursor: pointer;
     }
     .headerMenu:hover {
-        color: red;
+        color: rgba(38, 38, 38, 0.74);
         display: block;
         cursor: pointer;
     }
     .headerMenu:hover ul {
         display: block;
         margin-left: -50px;
-        background-color: #8f8f8f;
+        background-color: rgba(143, 143, 143, 0.58);
         margin-top: -1%;
         z-index: 100;
         border: #58d1dc;
