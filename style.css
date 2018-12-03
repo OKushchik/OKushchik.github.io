@@ -516,6 +516,7 @@ main{
     .headerMenu:hover {
         color: red;
         display: block;
+        cursor: pointer;
     }
     .headerMenu:hover ul {
         display: block;
