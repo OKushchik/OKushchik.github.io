@@ -520,6 +520,10 @@ main{
     .articleText__text {
         margin-bottom: -5%;
     }
+    .articleText__text {
+        border-bottom: 3px solid black;
+
+    }
 
 }
 @media screen and (max-width: 800px) {
