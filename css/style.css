@@ -518,9 +518,6 @@ main{
         display: block;
     }
     .articleText__text {
-        margin-bottom: -5%;
-    }
-    .articleText__text {
         border-bottom: 1px solid black;
 
     }
